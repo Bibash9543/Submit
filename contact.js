@@ -24,6 +24,16 @@
 //     });
 // });
 
+
+
+
+
+
+
+
+
+
+
  const burger = document.querySelector(".burger");
  const middle = document.querySelector(".middle1");
  const btn1 = document.querySelector(".btn1");
@@ -161,3 +171,49 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll(".text-slide");
+
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Stop observing once animation is applied
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    boxes.forEach(box => {
+        observer.observe(box);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

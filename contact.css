@@ -302,7 +302,11 @@ body.fade-out #loading-image {
 }
 
 
-
+.contact-form iframe{
+    height: 300px;
+    margin: 2rem;
+    
+}
 
 .contact-form{
     margin-top: 10rem;
@@ -573,6 +577,11 @@ body.fade-out #loading-image {
         display: flex;
         flex-direction: column;
      }
+     .contact-form iframe{
+        width: 90vw;
+        margin: 2rem;
+        
+    }
 
      .contact-form form .firstrow{
         display: flex;

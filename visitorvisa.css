@@ -134,7 +134,10 @@ span {
 }
 
 .belownavtext .displayuse .text {
-    margin: 14rem 0 0 7rem;
+    margin: 14rem 0 0 6rem;
+}
+.belownavtext .displayuse .text a{
+    margin-left: -3rem;
 }
 
 .belownavtext .displayuse .text button {
@@ -216,9 +219,7 @@ span {
     box-shadow: 2px 2px 2px 2px #ccc;
 }
 
-.visitorvisainfo {
-    margin-top: 10rem;
-}
+
 
 .visitorvisainfo div p,
 ul {
@@ -230,7 +231,77 @@ ul {
     font-weight: 500;
 }
 
+.visitorvisa-btn{
+    text-align: center;
+    padding-top: 2rem;
 
+}
+
+.visitorvisa-btn a button{
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    background-color: #00cc99;
+    color: white;
+    border: none;
+    border-radius: 1.3rem;
+    cursor: pointer;
+
+}
+.container .linkservice ul{
+    width:400px;
+    background-color: var(--dark3);
+    margin-left: 2rem;
+    margin-top: 3rem;
+    border-radius: 1.2rem;
+    padding-bottom: 2rem;
+}
+.container .linkservice{
+    order: 1;
+}
+.container .linkservice ul li{
+    margin-top: 1.5rem;
+    list-style-type: none;   
+    
+}
+.visitorvisainfo{
+    order: 2;
+}
+.container .linkservice ul li a img{
+
+height: 24px;
+background-color: var(--button);
+float: right;
+margin-right: 1.2rem;
+
+border-radius: 50%;
+}
+.container .linkservice ul li a {
+    display: inline-block;
+text-decoration: none;
+border: none;
+background-color: white;
+font-size: 1.2rem;
+width: 350px;
+padding: .7rem 0;
+color: #938f8f;
+border-radius: 1.5rem;
+text-align: center;
+margin-left: 1.2rem;
+
+}
+
+
+.linktonew{
+    display: flex;
+    justify-content: space-between;
+
+}
+.belowlink img{
+border-radius: 1.5rem;
+width: 350px;
+margin-top: 3rem;
+margin-left: 4rem;
+}
 
 
 .contact-form {
@@ -260,6 +331,11 @@ ul {
     margin-bottom: 3rem;
 
 
+}
+.contact-form iframe{
+    height: 300px;
+    margin: 2rem;
+    
 }
 
 .contact-form .title {
@@ -437,9 +513,18 @@ body.fade-out #loading-image {
     display: block;
 }
 
+@media screen and (max-width:900px) {
+    
+    
+    
+    
+    
+}
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+    .linktonew{
+        display: block;
+    }
     .contact-text-center {
         display: flex;
         text-align: center;
@@ -483,6 +568,11 @@ body.fade-out #loading-image {
         align-items: center;
 
     }
+    .contact-form iframe{
+        width: 90vw;
+        margin: 2rem;
+        
+    }
 
     .burger {
         position: absolute;
@@ -523,31 +613,7 @@ body.fade-out #loading-image {
         display: none;
     }
 
-    /* .belownav {
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-    }
 
-    .belownav .imgtext {
-        display: flex;
-        flex-direction: column;
-        margin-top: -40px;
-    }
-
-    .belownav .imgtext .headingtext {
-        margin-right: 40px;
-        margin-top: -150px;
-        font-size: 3rem;
-
-    }
-
-    .belownav .imgtext .para {
-        font-size: 1.3rem;
-        margin-top: 40px;
-        margin-right: 50px;
-        color: #f7fffd;
-    } */
 
     .belownavtext{
       max-width: 100vw;
@@ -584,7 +650,7 @@ body.fade-out #loading-image {
         max-width: 100vw;
     }
     .container .visitorvisainfo .one, .container .visitorvisainfo .second2, .container .visitorvisainfo .third, .container .visitorvisainfo .fourth, .container .visitorvisainfo .fifth, .container .visitorvisainfo .sixth, .container .visitorvisainfo .seven, .container .visitorvisainfo .eight, .container .visitorvisainfo .nine, .container .visitorvisainfo .ten, .container .visitorvisainfo .eleven{
-        max-width: 100vw;
+        max-width: 200vw;
         margin: 10px;
         padding: 20px;
     } 
@@ -670,7 +736,15 @@ body.fade-out #loading-image {
         
     }
 
+@media screen and (min-width:900px) and (max-width:1380px){
 
+    .container .visitorvisainfo .one, .container .visitorvisainfo .second2, .container .visitorvisainfo .third, .container .visitorvisainfo .fourth, .container .visitorvisainfo .fifth, .container .visitorvisainfo .sixth, .container .visitorvisainfo .seven, .container .visitorvisainfo .eight, .container .visitorvisainfo .nine, .container .visitorvisainfo .ten, .container .visitorvisainfo .eleven{
+        max-width: 200vw;
+        margin: 10px;
+        padding: 20px;
+    } 
+
+}
     @media screen and (max-width: 350px) {
         .contact-text-center {
             font-size: 8px;

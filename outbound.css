@@ -147,7 +147,11 @@ body.fade-out #loading-image {
     color: var(--light);
     
 }
-
+.contact-form iframe{
+    height: 300px;
+    margin: 2rem;
+    
+}
 .secondbtn .first,.second{
     padding: 1rem 2rem;
     margin-top: 1rem;
@@ -528,7 +532,11 @@ body.fade-out #loading-image {
     .right img {
         display: none;
     }
-
+    .contact-form iframe{
+        width: 90vw;
+        margin: 2rem;
+        
+    }
     .navi .left img {
         display: block;
         margin-left: 10px;

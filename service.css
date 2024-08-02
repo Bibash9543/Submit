@@ -286,9 +286,28 @@ body.fade-out #loading-image {
     font-size: 1rem;
     cursor: pointer;
 }
+.visitorvisa-btn{
+    text-align: center;
+    padding-top: 2rem;
 
+}
 
+.visitorvisa-btn a button{
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    background-color: #00cc99;
+    color: white;
+    border: none;
+    border-radius: 1.3rem;
+    cursor: pointer;
 
+}
+
+.contact-form iframe{
+    height: 300px;
+    margin: 2rem;
+    
+}
 
 .contact-form{
     margin-top: 10rem;
@@ -496,7 +515,11 @@ body.fade-out #loading-image {
         align-items: center;
 
     }
-
+    .contact-form iframe{
+        width: 90vw;
+        margin: 2rem;
+        
+    }
     .left {
         width: 90vw;
         display: flex;

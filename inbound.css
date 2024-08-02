@@ -87,7 +87,11 @@ span{
     
 }
 
-
+.contact-form iframe{
+    height: 300px;
+    margin: 2rem;
+    
+}
 /* Loading image styles */
 #loading-image {
     display: none;
@@ -208,27 +212,6 @@ body.fade-out #loading-image {
 .vision .text p{
     line-height: 1.4rem;
 }
-
-/* .container-counter{
-    background-color: #f2f7f3;
-}
-
-.container .count{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-left: 3rem;
-    padding: 3rem 0;
-    
-    
-
-}
-.count .first{
-    text-align: center;
-}
-
-.count .first h1{
-    padding-bottom: 2rem;
-} */
 
 
 
@@ -535,7 +518,11 @@ body.fade-out #loading-image {
         display: block;
         margin-left: 10px;
     }
-
+    .contact-form iframe{
+        width: 90vw;
+        margin: 2rem;
+        
+    }
     .navbar .navi {
         flex-direction: column;
         position: relative;

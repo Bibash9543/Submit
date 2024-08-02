@@ -230,6 +230,11 @@ body.fade-out #loading-image {
     padding-bottom: 2rem;
 } */
 
+.contact-form iframe{
+    height: 300px;
+    margin: 2rem;
+    
+}
 .contact-form{
     margin-top: 15rem;
     margin-left: 9rem;
@@ -449,7 +454,11 @@ body.fade-out #loading-image {
     .right img {
         display: none;
     }
-
+    .contact-form iframe{
+        width: 90vw;
+        margin: 2rem;
+        
+    }
     .navi .left img {
         display: block;
         margin-left: 10px;
